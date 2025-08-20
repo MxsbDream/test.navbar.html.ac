@@ -1,0 +1,99 @@
+<!-- Lucide Icons CDN -->
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+<!-- Navbar flottante -->
+<nav class="bottom-navbar">
+  <a href="/dashboard.html" class="nav-item1" data-tooltip="Dashboard">
+    <i data-lucide="layout-dashboard"></i>
+  </a>
+  <a href="/profile.html" class="nav-item2" data-tooltip="Profil">
+    <i data-lucide="user"></i>
+  </a>
+  <a href="/friends.html" class="nav-item3" data-tooltip="Amis">
+    <i data-lucide="smile-plus"></i>
+  </a>
+  <a href="/settings.html" class="nav-item4" data-tooltip="Paramètres">
+    <i data-lucide="settings"></i>
+  </a>
+  <a href="/settings.html" class="nav-item5" data-tooltip="Paramètres">
+    <i data-lucide="icon-trophy"></i>
+  </a>
+</nav>
+
+<style>
+
+ .bottom-navbar {
+    position: fixed;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    max-width: 9900px;
+    padding: 10px 0;
+    border-radius: 999px;
+    box-shadow: 0 10px 200px rgba(38 38 38);
+    z-index: 1000;
+  }
+
+  .nav-item1 {
+    color: #ed781f;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .nav-item2 {
+    color: #1f8ded;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+  }
+  
+  .nav-item3 {
+    color: #fc0303;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s ease,transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .nav-item4 {
+    color: #686964;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease, filter 0.3s ease;
+  }
+
+  .nav-item:hover {
+    transform: scale(1.2) translateY(-3px);
+    filter: drop-shadow(0 0 6px rgba(0 0 0));
+  }
+
+  .nav-item:hover::after {
+    opacity: 1;
+    transform: translateY(0);
+  }
+</style>
+
+<script>
+  lucide.createIcons();
+  </script>
